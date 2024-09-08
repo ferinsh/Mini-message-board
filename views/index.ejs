@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Homepage</title>
+    </head>
+    <body>
+
+        <a href="/new" class="newMsg" target="_blank">
+            new message<br>
+            -------------------------------
+        </a>
+
+        <% messages.forEach((message) => { %>
+        <div class="message">
+            TEXT: <%- message.text %><br>
+            USER: <%- message.user %><br>
+            ADDED: <%- message.added %><br>
+            -------------------------------
+        </div>
+        <% }); %>
+    </body>
+</html>
